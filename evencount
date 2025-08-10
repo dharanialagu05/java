@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Evencount {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int first=sc.nextInt();
+		int last=sc.nextInt();
+		int evencount=0;
+		for(int i=first;i<=last;i++) {
+			if(i%2!=0)
+			{
+				evencount++;
+			}
+	
+		}
+	
+	System.out.println(evencount);
+
+
+
+	}
+
+}
