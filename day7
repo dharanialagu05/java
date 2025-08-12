@@ -1,0 +1,380 @@
+public class ascii {
+
+	public static void main(String[] args) {
+		char ch='a';
+		char ch1=(char)(ch-32);
+		System.out.println(ch1);
+
+	}
+
+}
+
+LOWER TO UPPER CASE:
+import java.util.Scanner;
+public class lowertoupper {
+	    public static void main(String[] args) {
+	        String str = "dharani al";
+	        String result = "";
+
+	        for (int i = 0; i < str.length(); i++) {
+	            char ch = str.charAt(i);
+
+	            if (ch >= 'a' && ch <= 'z') {
+	                ch = (char)(ch - 32); 
+	            }
+
+	            result += ch;
+	        }
+
+	        System.out.println("Uppercase: " + result);
+	    }
+	}
+
+UPPER TO LOWERCASE:
+public class upcase {
+	    public static void main(String[] args) {
+	        String str = "AL DHARANI";
+	        String result = "";
+
+	        for (int i = 0; i < str.length(); i++) {
+	            char ch = str.charAt(i);
+
+	            if (ch >= 'A' && ch <= 'Z') {
+	                ch = (char)(ch + 32);
+	            }
+
+	            result += ch;
+	        }
+
+	        System.out.println("Lowercase: " + result);
+	    }
+	}
+
+TOGGLECASE:
+public class Togglecase {
+	    public static void main(String[] args) {
+	        String str = "Dharani";
+	        String result = "";
+
+	        for (int i = 0; i < str.length(); i++) {
+	            char ch = str.charAt(i);
+
+	            if (Character.isUpperCase(ch))
+	            {
+	                result += Character.toLowerCase(ch);
+	            } 
+	            else if (Character.isLowerCase(ch)) 
+	            {
+	                result += Character.toUpperCase(ch);
+	            } 
+	            else 
+	            {
+	                result += ch; 
+	            }
+	        }
+	        System.out.println(result);
+	    }
+}
+	        
+METHOD:
+import java.util.Scanner;
+
+public class method {
+	public int add(int a,int b) {
+		int sum=a+b;
+		return sum;
+	}
+
+	public static void main(String[] args) {
+	 method obj=new method();
+	 Scanner sc=new Scanner(System.in);
+	 int num=sc.nextInt();
+	 int num2=sc.nextInt();
+	 int res=num+num2;
+	 System.out.println(res);
+	}
+
+}
+
+METHOD2:
+public class method2 {
+	public void display() {
+		System.out.println("hi nice to meet you");
+	}
+
+	public static void main(String[] args) {
+		
+		method2 obj=new method2();
+		obj.display();
+	}
+
+}
+
+METHOD3:
+public class method3 {
+	public void display()
+	{
+		System.out.println("ajmal");
+	}
+
+	public static void main(String[] args) {
+	 method3 obj=new method3();
+	 obj.display();
+	}
+
+}
+
+METHOD4:
+public class method4 {
+	public String display() {
+    String name="dharani";
+    return name;
+	}
+	public static void main(String[] args) {
+		method4 obj=new method4();
+		String res=obj.display();
+		System.out.println(res);
+
+	}
+
+}
+
+STRING BUFFER:
+public class stringbuffer {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("hello");
+		System.out.println(sb);
+		sb.append(",world");
+		System.out.println(sb); 
+		sb.insert(5,"java");
+		System.out.println(sb);
+		sb.delete(5,10);
+		System.out.println(sb);
+		sb.reverse();
+		System.out.println(sb);
+		sb.replace(0,3,"AA");
+		System.out.println(sb);
+
+	}
+
+}
+
+STRING:
+public class strings {
+
+	public static void main(String[] args) {
+		String str=" dhara alagi";
+		String str1="amuthan";
+		String str2="krithi";
+		String str3="mahi";
+		System.out.println(str==str1);
+		System.out.println(str.length());
+		System.out.println(str);
+		String Word[]=str.split(" ");
+		for(String var:Word)
+		{
+		System.out.println(var);
+		}
+		System.out.println(str3.substring(1,4));
+		System.out.println(str3.contains("dev"));
+		System.out.println(str3.startsWith("ma"));
+		System.out.println(str3.endsWith("es"));
+		System.out.println(str3.charAt(3));
+		System.out.println(str3.concat(" gether"));
+		System.out.println(str3.toUpperCase());
+		System.out.println(str2.toLowerCase());
+		
+		
+	}
+
+}
+ HACKERRANK TASK:
+1068
+  import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        System.out.println("The magic within the string is "+""+str);
+       
+        
+    }
+}
+
+1069
+  import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        String phrase = scanner.nextLine();
+
+        
+        System.out.println("The cosmic resonance of your phrase unfolds: " + phrase);
+
+        scanner.close();
+    }
+}
+
+1070
+  import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String word = scanner.nextLine();
+        int length = word.length();
+        System.out.println("Quantum revelation! The quantum length of " + word + " is " + length + ".");
+    }
+}
+
+
+1071
+  import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str1 = scanner.nextLine();
+        String str2 = scanner.nextLine();
+        if (str1.equals(str2)) {
+            System.out.println("Celestial Confirmation! The strings align.");
+        } else {
+            System.out.println("Galactic Discrepancy! The strings do not align.");
+        }
+
+    }
+}
+
+    
+
+
+1072
+  import java.util.Scanner;
+
+public class FriendshipReunion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name1 = scanner.nextLine();
+        String name2 = scanner.nextLine();
+        String concat = name1 + name2;
+        System.out.println("Friendship Rekindled! The concatenated string is " + concat + ".");
+
+    
+    }
+}
+
+1073
+  import java.util.Scanner;
+
+public class WordAscender {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String word = scanner.nextLine();
+        StringBuffer ascendedWord = new StringBuffer(word.toUpperCase());
+        System.out.println("Word Ascension Achieved! Behold the majestic transformation: " + ascendedWord + ".");
+        scanner.close();
+    }
+}
+
+
+1074
+  import java.util.Scanner;
+
+public class OracleOfSymmetry {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        String reversed = new StringBuilder(input).reverse().toString();
+
+        if (input.equals(reversed)) {
+            System.out.println("Palindrome Revelation! The string is a palindrome.");
+        } else {
+            System.out.println("Palindromic Mystery Unsolved! The string is not a palindrome.");
+        }
+
+        scanner.close();
+    }
+}
+
+1075
+ import java.util.Scanner;
+
+public class CaseCascadeCarnival {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        StringBuilder transformed = new StringBuilder();
+
+        for (char c : input.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                transformed.append(Character.toLowerCase(c));
+            } else {
+                transformed.append(Character.toUpperCase(c));
+            }
+        }
+
+        System.out.println("Case Cascade Magic Unleashed! The " + transformed + " transformation is complete.");
+        scanner.close();
+    }
+}
+
+1076
+  import java.util.Scanner;
+
+public class VowelSeeker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine().toLowerCase();
+        int vowelCount = 0;
+
+        for (char c : input.toCharArray()) {
+            if ("aeiou".indexOf(c) != -1) {
+                vowelCount++;
+            }
+        }
+
+        System.out.println("Vowel Voyage Completed! Number of vowels: " + vowelCount);
+        scanner.close();
+    }
+}
+
+
+1077
+  import java.util.Scanner;
+
+public class AbbreviationMagic {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = Integer.parseInt(scanner.nextLine()); 
+
+        for (int i = 0; i < n; i++) {
+            String word = scanner.nextLine();
+
+            if (word.length() <= 10) {
+                System.out.println(word);
+            } else {
+               
+                char first = word.charAt(0);
+                int middleCount = word.length() - 2;
+                char last = word.charAt(word.length() - 1);
+
+                String abbreviated = "" + first + middleCount + last;
+                System.out.println(abbreviated);
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+
