@@ -1,0 +1,25 @@
+abstract class Scooty
+{
+	abstract void run();
+}
+class Zest extends Scooty
+{
+	void run()
+	{
+		System.out.println("vehicle");
+	}
+	void play()
+	{
+		System.out.println("playing");
+	}
+}
+public class Abstract {
+
+	public static void main(String[] args) {
+		Zest obj=new Zest();
+		obj.run();
+		
+
+	}
+
+}
