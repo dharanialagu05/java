@@ -1,0 +1,360 @@
+AllInOne:
+
+public class AllInOne {
+ static String message = "Hello, ";
+   static {
+	        System.out.println("hi");
+	        message += "World!";
+	    }
+
+	   
+	    public static void staticMethod() {
+	        System.out.println("good morning");
+      }
+  
+	    public static String concatMethod(String add) {
+	        return message + add;
+	    }
+
+	    public static void main(String[] args) {
+	        
+	        staticMethod();
+
+	        
+	        System.out.println("static block: " + message);
+
+	        String result = concatMethod(" How are you?");
+	        System.out.println( result);
+	    }
+	}
+
+CLMAIN:
+
+public class clMain {
+
+	String hotelname;
+	String food;
+	int price;
+
+	public static void main(String[] args) {
+		clMain obj=new clMain();
+		System.out.println(obj.hotelname);
+		clMain obj1=new clMain();
+        System.out.println(obj1.price);
+        obj.price=50;
+        obj.hotelname="maran";
+		System.out.println(obj.price);
+		System.out.println(obj.hotelname);
+		}
+		
+
+	}
+
+
+CODETHIS USING:
+
+public class codethis {
+
+			int age1;
+			String name;
+			codethis(int age1,String name)
+			{
+				this.age1=age1;
+				this.name=name;
+			}
+			void display()
+			{
+				System.out.println(age1+" "+name);
+			}
+      public static void main (String[] args) {
+    	  codethis obj=new codethis(3,"dhara");
+           obj.display();
+	}
+
+}
+
+CONSTRUCTOR OVERLOADING:
+
+public class ConstructorOverloading {
+
+	int age;
+	String name;
+	
+	ConstructorOverloading(){
+		System.out.println("hi");
+	}
+	ConstructorOverloading(int a,String str)
+    {
+    System.out.println(a+" "+str);	
+    } 
+	ConstructorOverloading(float b)
+	{
+		System.out.println(b);
+	}
+    
+	public static void main(String[] args) {
+		ConstructorOverloading obj= new ConstructorOverloading(2,"dhara");
+		ConstructorOverloading obj2=new ConstructorOverloading(5.5f);
+	
+	}
+
+}
+
+DEFAULTCONSTRUCTOR:
+
+public class Defaultconstructor {
+	 Defaultconstructor()        
+	 {
+		  System.out.println("Hello dhara");
+	 }
+	
+
+	public static void main(String[] args) {
+		 Defaultconstructor  obj = new  Defaultconstructor();
+
+	}
+
+}
+
+HIERARCHICALINHERITANCE
+
+class appa
+{
+	void property()
+	{
+		System.out.println("house,cars,money");
+	}
+}
+class pilla extends appa
+{
+	void display()
+	{
+		System.out.println("bike,iphone");
+	}
+}
+class Daughter extends appa
+{
+	void show(){
+		{
+			System.out.println("makeup things");
+		}
+	}
+}
+public class HieraricalInheritance {
+
+	public static void main(String[] args) {
+		pilla obj=new pilla();
+		obj.property();
+
+	}
+
+}
+
+MULTILEVEL INHERITANCE:
+
+class Grandpa
+{
+	void display() {
+		System.out.println("VILLA");
+	}
+}
+class Father extends Grandpa
+{
+	void property()
+	{
+		System.out.println("house,lands,cars,money");
+	}
+}
+class child extends Father
+{
+	void show()
+	{
+		System.out.println("bike,iphone");
+	}
+}
+public class MultilevelInheritance {
+
+	public static void main(String[] args) {
+	Father obj=new Father();
+		obj.display();
+		
+
+	}
+
+}
+
+PARAMETERIZED CONSTRUCTOR:
+ 
+public class parameterizedconstructor {
+	int age;
+	String name;
+	
+	parameterizedconstructor(){
+		System.out.println("hi");
+	}
+    parameterizedconstructor(int a,String str)
+    {
+    	
+    	age = a;
+    	name= str;
+    } 
+   
+    void display()
+    {
+    	System.out.println(age+" "+name);
+    }
+	public static void main(String[] args) {
+		parameterizedconstructor obj= new parameterizedconstructor(2,"dhara");
+		obj.display();
+	}
+
+}
+
+SINGLE INHERITANCE:
+ 
+class Dad
+	{
+		void property()
+		{
+			System.out.println("house,lands,cars,money");
+		}
+		
+	}
+	class Son extends Dad
+	{
+		void show()
+		{
+			System.out.println("bike,iphone");
+		}
+	}
+	
+	public class SingleInheritance {
+
+	public static void main(String[] args) {
+		Son obj=new Son();
+		obj.property();
+	}
+
+}
+
+STATIC BLOCK:
+
+public class staticblock {
+     static
+     {
+    	 System.out.println("mountzion");
+     }
+     
+	public static void main(String[] args)
+	{
+		System.out.println("nice to meet you krithi");
+	}
+
+}
+
+STATIC METHOD:
+
+public class staticmethod {
+    int rollno=25;
+    String name="dhara";
+    static String collegename="zion";
+    
+    void display(int a,String name) {
+    	System.out.println(a+" "+name+" "+collegename);
+    }
+    public static void show(int a)
+    {
+    	staticmethod.collegename="mount zion";
+    	System.out.println(a+" "+collegename);
+    }
+    
+	public static void main(String[] args) {
+		staticmethod.show(25);
+		staticmethod obj=new staticmethod();
+		obj.display(26, "dharan");
+
+	}
+
+}
+
+STATIC VARIABLE,CONCAT METHOD:
+
+public class staticscode {
+	int rollno=25;
+	String name="dharani";
+	static String collegename="zion";
+	void display(int a,String name) {
+	System.out.println(a+" "+name+" "+collegename);
+}
+	public static void main(String[] args) {
+		staticscode obj=new staticscode();
+		System.out.println(obj.rollno);
+		System.out.println(staticscode.collegename);
+		staticscode.collegename="mount";
+		obj.display(26,"amuthan");
+		obj.display(27,"subi");
+		obj.display(28,"krithi");
+		obj.display(29,"deva");
+	}
+
+}
+
+THIS KEYWORD 2:
+
+public class thiskeyword {
+void display()
+{
+	System.out.println("hello display");
+}
+void show()
+{
+	this.display();
+	System.out.println("hello show");
+}
+	public static void main(String[] args) {
+	  thiskeyword obj=new thiskeyword();
+	  obj.show();
+
+	}
+
+}
+
+USING OBJ:
+
+public class Trip {
+    String place;
+    String transport;
+    String Food;
+    String Visit;
+    int cost;
+   
+    public static void main(String[] args) {
+        
+        Trip obj = new Trip();
+        System.out.println(obj.place);
+        
+        Trip obj1 = new Trip();
+        System.out.println(obj1.transport);
+        
+        Trip obj2 = new Trip();
+        System.out.println(obj2.cost);
+        
+        Trip obj3 = new Trip();
+        System.out.println(obj.Food);
+        
+        Trip obj4 = new Trip();
+        System.out.println(obj4.Visit);
+        
+        obj.place = "Ooty";
+        obj1.transport = "Car";
+        obj2.cost = 1500;
+        obj3.Food = "Temple City";
+        obj4.Visit = "Guna Cave";
+        
+        System.out.println(obj.place);
+        System.out.println(obj1.transport);
+        System.out.println(obj2.cost);
+        System.out.println(obj3.Food);
+        System.out.println(obj4.Visit);
+    }
+}
