@@ -1,0 +1,30 @@
+class Bird1
+{
+    String color = "purple";
+
+    void Eat() 
+    {
+        System.out.println("Eating");
+    }
+}
+
+class Dog extends Bird1 {
+    void bark() {
+        System.out.println("Barking");
+    }
+
+    void display() 
+    {
+        super.Eat();
+        bark();
+    }
+}
+
+public class Supermethod 
+{
+    public static void main(String[] args) 
+    {
+        Dog obj = new Dog();
+        obj.display();
+    }
+}
