@@ -1,0 +1,22 @@
+class Bird3
+ {
+	 Bird3()
+	 {
+		 System.out.println("singing");
+	 }
+ }
+ class Dog2 extends Bird3
+ {
+	 Dog2()
+	 {
+		 System.out.println("Bow Bow");
+	 }
+ }
+public class Constructorsuperkey {
+
+	public static void main(String[] args) {
+		Dog2 obj=new Dog2();
+
+	}
+
+}
