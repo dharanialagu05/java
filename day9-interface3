@@ -1,0 +1,25 @@
+class animal2
+{
+	String color="red";
+}
+class Bird
+{
+	String color="purple";
+}
+class dog extends Bird
+{
+	String color="white";
+	void display() 
+	{
+	System.out.println(color);
+	System.out.println(super.color);
+	}
+}
+public class Interface3 {
+
+	public static void main(String[] args) {
+		dog obj=new dog();
+		obj.display();
+	}
+
+}
